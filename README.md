@@ -1,4 +1,4 @@
-# My Infrastructure Monitoring Lab
+# Infrastructure Monitoring Lab
 
 For detailed documentation, see: [docs/](docs/)  
 
