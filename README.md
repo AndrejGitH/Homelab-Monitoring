@@ -11,7 +11,7 @@ I'm passionate about understanding how systems work under the hood and wanted ha
 
 ## Technology Stack
 - **Prometheus** - Modern metrics collection and alerting
-- **Grafana** - Building custom dashboards that actually make sense
+- **Grafana** - Building custom dashboards
 - **Zabbix** - Traditional monitoring to understand enterprise legacy systems
 - **AWS EC2** - Linux server running the monitoring tools, Windows Server 2022 as the target
 - **PromQL** - Writing queries to extract meaningful data from metrics
