@@ -1,0 +1,34 @@
+groups:
+- name: WidnowsHighCPU
+  rules:
+  # Alert 1: Windows server high CPU
+  - alert: WindowsHighCPU
+    expr: 100 - (avg by(instance)(rate(windows_cpu_time_total{mode="idle"}[5m])) * 100) > 80
+    for: 2m
+    labels:
+      severity: warning
+      service: windows
+    annotations:
+      summary: "High CPU usage on Windows server {{ $labels.instance }}"
+      description: "CPU usage is {{ $value }}% for more than 2 minutes"
+
+  # Alert 2: Linux server high memory
+  - alert: LinuxHighMemory
+    expr: (1 - (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)) * 100 > 85
+    for: 1m
+    labels:
+      severity: critical
+      service: linux
+    annotations:
+      summary: "High memory usage on Linux server {{ $labels.instance }}"
+      description: "Memory usage is {{ $value }}% for more than 1 minute"
+
+  # Alert 3: Any target down
+  - alert: TargetDown
+    expr: up == 0
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Target {{ $labels.instance }} is down"
+      description: "{{ $labels.job }} target {{ $labels.instance }} has been down for more than 1 minute"
