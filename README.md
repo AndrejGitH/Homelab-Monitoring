@@ -15,6 +15,7 @@ I'm passionate about understanding how systems work under the hood and wanted ha
 - **Zabbix** - Traditional monitoring to understand enterprise legacy systems
 - **AWS EC2** - Linux server running the monitoring tools, Windows Server 2022 as the target
 - **PromQL** - Writing queries to extract meaningful data from metrics
+- **Docker/ECR** - Transitioned Prometheus from traditional system service to Docker container
 
 ## What I Actually Did
 - **Set up cross-region monitoring** between Linux and Windows servers on AWS
@@ -22,6 +23,7 @@ I'm passionate about understanding how systems work under the hood and wanted ha
 - **Created alerting rules** that fire when actual problems happen 
 - **Learned to troubleshoot** when things broke - YAML configs, service dependencies, networking issues
 - **Made it secure** with PSK encryption and proper firewall rules
+- **Implemented AWS Elastic Container Registry (ECR)** to create a centralized private container repository for container portability across multiple servers
 
 ## Challenges I Overcame
 - **Grafana dashboard variables** kept breaking when I copied queries - learned the hard way about templating
