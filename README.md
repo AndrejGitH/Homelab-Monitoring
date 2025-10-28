@@ -34,7 +34,7 @@ I'm passionate about understanding how systems work under the hood and wanted ha
 ## What This Taught Me
 Understanding monitoring isn't just about installing tools - it's about knowing what normal looks like so you can spot when something's wrong. Every spike in CPU or memory tells a story about what the server is doing.
 
-![My Custom Grafana Dashboard](https://github.com/AndrejGitH/Homelab-Monitoring/blob/master/images/Dashboard_readme.png?raw=true)
+![My Custom Grafana Dashboard](https://github.com/AndrejGitH/Homelab-Monitoring/blob/master/images/Grafana.png?raw=true)
 
 ![Win22_Zabbix](https://github.com/AndrejGitH/Homelab-Monitoring/blob/master/images/image%201.png?raw=true) 
 
